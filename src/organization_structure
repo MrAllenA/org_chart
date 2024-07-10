@@ -1,0 +1,25 @@
+digraph {
+	Engineering [label=Engineering shape=box]
+	"Engineering_Senior Engineer" [label="Senior Engineer" shape=ellipse]
+	Engineering -> "Engineering_Senior Engineer"
+	"Engineering_Senior Engineer_Lead Projects" [label="Lead Projects" shape=plaintext]
+	"Engineering_Senior Engineer" -> "Engineering_Senior Engineer_Lead Projects"
+	"Engineering_Senior Engineer_Mentor Junior Engineers" [label="Mentor Junior Engineers" shape=plaintext]
+	"Engineering_Senior Engineer" -> "Engineering_Senior Engineer_Mentor Junior Engineers"
+	"Engineering_Junior Engineer" [label="Junior Engineer" shape=ellipse]
+	Engineering -> "Engineering_Junior Engineer"
+	"Engineering_Junior Engineer_Assist in Projects" [label="Assist in Projects" shape=plaintext]
+	"Engineering_Junior Engineer" -> "Engineering_Junior Engineer_Assist in Projects"
+	"Engineering_Junior Engineer_Learn and Develop Skills" [label="Learn and Develop Skills" shape=plaintext]
+	"Engineering_Junior Engineer" -> "Engineering_Junior Engineer_Learn and Develop Skills"
+	HR [label=HR shape=box]
+	"HR_HR Manager" [label="HR Manager" shape=ellipse]
+	HR -> "HR_HR Manager"
+	"HR_HR Manager_Manage Recruitment" [label="Manage Recruitment" shape=plaintext]
+	"HR_HR Manager" -> "HR_HR Manager_Manage Recruitment"
+	"HR_Junior Engineer" [label="Junior Engineer" shape=ellipse]
+	"HR_HR Manager_Manage Recruitment" -> "HR_Junior Engineer"
+	"HR_HR Manager_Oversee Employee Relations" [label="Oversee Employee Relations" shape=plaintext]
+	"HR_HR Manager" -> "HR_HR Manager_Oversee Employee Relations"
+	"HR_HR Manager_Oversee Employee Relations" -> "HR_Junior Engineer"
+}
